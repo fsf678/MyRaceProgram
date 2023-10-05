@@ -1,0 +1,53 @@
+
+table {
+    width: 780px;
+    height: 780px;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+td {
+    width: 39px;
+    height: 39px;
+    position: relative;
+    background-color: #c28d3d;
+    outline: 3px solid black;
+}
+
+.piece {
+    position: absolute;
+    bottom: 15px;
+    left: -2px;
+    width: 36.4px;
+    height: 36.4px;
+
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 添加立体感效果 */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    perspective: 1000px; /* 透视效果 */
+
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 两列，均分容器宽度 */
+    gap: 10px; /* 间距 */
+    right: 30px;
+    bottom: 20px;
+    background: transparent;
+}
+
+.div-box {
+    height: 800px;
+    /* 可以添加其他样式 */
+}
+
+.div-blurr{
+    border-radius: 30px; /* 设置圆角半径 */
+    backdrop-filter: blur(15px);
+}
